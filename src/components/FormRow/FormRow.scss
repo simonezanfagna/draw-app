@@ -1,0 +1,15 @@
+.form_row {
+  .form_label {
+    display: block;
+    text-transform: capitalize;
+    font-size: 17px;
+  }
+  .form_input {
+    height: 35px;
+    width: 100%;
+    padding: 0 5px;
+    background: transparent;
+    border: unset;
+    border-bottom: 4px solid #272725;
+  }
+}

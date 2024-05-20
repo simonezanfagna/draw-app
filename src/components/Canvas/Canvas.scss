@@ -1,0 +1,28 @@
+.canvas_container {
+  width: calc(100% - 370px);
+  height: calc(100% - 60px);
+  margin: 30px;
+  display: grid;
+  align-items: center;
+  overflow: auto;
+  transition: width 0.3s;
+
+  &.canvas_container_full {
+    width: 100%;
+  }
+  .canvas_subContainer {
+    position: relative;
+    width: 1280px;
+    height: 720px;
+    justify-self: center;
+    canvas {
+      touch-action: none;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .canvas_container {
+    width: 0;
+  }
+}

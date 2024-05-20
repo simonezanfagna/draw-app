@@ -1,0 +1,53 @@
+.landing_container {
+  max-width: 1300px;
+  padding: 0 30px;
+  margin: auto;
+  h1 {
+    font-size: 50px;
+    padding: 20px 0;
+  }
+  .landing_main {
+    display: flex;
+    min-height: calc(100vh - 102px);
+    padding-bottom: 20px;
+
+    .landing_main_content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url(./../../assets/images/logo_DrawApp.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        opacity: 0.04;
+      }
+      h2 {
+        font-size: 40px;
+
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 25px;
+        margin-bottom: 30px;
+      }
+      a {
+        display: inline-block;
+        width: fit-content;
+        height: 36px;
+        line-height: 16px;
+        position: relative;
+        font-weight: bold;
+        padding: 10px 20px;
+      }
+    }
+  }
+}
