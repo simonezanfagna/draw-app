@@ -44,7 +44,7 @@ Key Files
 
 #### Frontend
 
-- index.html: The entry point for the React application. It includes a root <div> where the React components are rendered.
+- index.html: The entry point for the React application. It includes a root div where the React components are rendered.
 
 - App.jsx: Sets up the main application routes using React-Router. It defines routes for the landing, dashboard, register, and drawings.
 
@@ -80,14 +80,12 @@ Key Files
 - Get All Drawings (/api/getAllDrawings): Retrieves all saved drawings for the logged-in user, encoding the image data for frontend display.
 - Delete Drawing (/api/deleteDrawing): Deletes a specified drawing if the user is authorized.
 - Download Drawing (/api/downloadDrawing/<int:drawing_id>): Provides a downloadable version of a specified drawing if the user is authorized.
-  models.py: Defines the database models:
-
-- User: Contains user information such as email, name, hashed password, and relationships to drawings.
-- Drawing: Contains drawing data and a foreign key relationship to the user.
-  helpers.py: Includes utility functions:
-
-- login_required: A decorator to ensure routes are only accessible to logged-in users.
-- validate_email: Validates email format.
+- Database models:
+  - User: Contains user information such as email, name, hashed password, and relationships to drawings.
+  - Drawing: Contains drawing data and a foreign key relationship to the user.
+- helpers.py:
+  - login_required: A decorator to ensure routes are only accessible to logged-in users.
+  - validate_email: Validates email format.
 
 ####
 
